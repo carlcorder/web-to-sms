@@ -1,0 +1,344 @@
+html {
+     height: 100%;
+     width: 100%;
+}
+ body {
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background-image: url("desktop.jpg");
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+     background-attachment: fixed;
+     font-family: 'Barlow', sans-serif;
+}
+ .input-group-addon {
+     cursor: pointer;
+     background-color: transparent;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow: none;
+     border-radius: 0px;
+}
+ .form-control {
+     height: 40px;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     box-shadow: none;
+     border-radius: 0px;
+     position: relative;
+     z-index: 100;
+     font-size: 16px;
+     color: #333;
+     font-weight: 600;
+     background-color: transparent;
+     z-index: 10;
+     transition: opacity 0.28s ease;
+     will-change: opacity;
+}
+ .form-control:focus {
+     box-shadow: none;
+     outline: none;
+     border-color: #ccc;
+     opacity: 1;
+}
+ .inp-label {
+     position: relative;
+     transform: translateY(30px);
+     z-index: 200;
+     margin-left: 15px;
+     transition: all .4s;
+     font-weight: 500;
+     color: #333;
+     cursor: initial;
+     z-index: 1;
+}
+ .tooltip > .tooltip-inner {
+     background-color: #3683F7;
+     font-family: 'Barlow', sans-serif;
+     font-size: 15px;
+}
+ .tooltip.bottom > .tooltip-arrow {
+     border-bottom-color: #3683F7;
+}
+ label.active {
+     margin-left: 0px;
+     transform: translateY(0px);
+     transition: all .4s;
+     font-weight: 500;
+     color: #888;
+}
+ .tile {
+     position: relative;
+     margin: 22% 0px;
+     background-color: #fff;
+     padding: 30px;
+     box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.1);
+     border-radius: 5px;
+     z-index: 100;
+}
+ .tile:after {
+     content: '';
+     display: block;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     border-radius: 5px;
+     top: 15px;
+     left: 15px;
+     bottom: 15px;
+     background-color: rgba(255,255,255,0.5);
+     z-index: -1;
+}
+ h3 {
+     margin: 0px 0px 30px;
+     line-height: 35px;
+     font-size: 20px;
+}
+ h3 small {
+     display: block;
+}
+ .fa-lock {
+     color: #3683F7;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     border-radius: 50%;
+     background-color: #E4EFFF;
+     text-align: center;
+     font-size: 20px;
+     margin-bottom: 30px;
+}
+ .input-group:after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 1px;
+     background: #262FB5;
+     background: -moz-linear-gradient(-45deg, #3F61F6 0%,#22d2f8 100%);
+     background: -webkit-linear-gradient(-45deg, #3F61F6 0%,#22d2f8 100%);
+     background: linear-gradient(135deg, #3F61F6 0%,#22d2f8 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F61F6', endColorstr='#22d2f8',GradientType=1 );
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     z-index: 100;
+     transition: all .4s;
+}
+ .focusedLine:after {
+     left: 0;
+     right: 0;
+     width: 100%;
+}
+ .btn-primary {
+     padding: 0px 40px;
+     border: none;
+     line-height: 40px;
+     margin: 25px 0px 0px;
+     background: #262FB5;
+     background: -moz-linear-gradient(-45deg, #3F61F6 0%,#22d2f8 100%);
+     background: -webkit-linear-gradient(-45deg, #3F61F6 0%,#22d2f8 100%);
+     background: linear-gradient(135deg, #3F61F6 0%,#22d2f8 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F61F6', endColorstr='#22d2f8',GradientType=1 );
+}
+ .success {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     margin: 45% auto;
+     height: 0px;
+     width: 0px;
+     border-radius: 50%;
+     z-index: 100;
+     text-align: center;
+     transition: ease-out .5s;
+     background: #42e695;
+     background: -moz-linear-gradient(-45deg, #42e695 0%,#3bb2b8 100%);
+     background: -webkit-linear-gradient(-45deg, #42e695 0%,#3bb2b8 100%);
+     background: linear-gradient(135deg, #42e695 0%,#3bb2b8 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42e695', endColorstr='#3bb2b8',GradientType=1 );
+     overflow: hidden;
+}
+ .success h2 {
+     text-align: center;
+     color: #fff;
+     padding: 0px;
+     margin: 0px;
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: 600;
+     transform: translateY(-60px);
+     letter-spacing: 1px;
+}
+ .success_active {
+     margin: 0 auto;
+     width: 100%;
+     height: 100%;
+     border-radius: 0px;
+}
+ .checkmark {
+     display: none;
+}
+ .checkmark.draw:after {
+     animation-duration: 800ms;
+     animation-timing-function: ease;
+     animation-name: checkmark;
+     transform: scaleX(-1) rotate(135deg);
+     animation-delay: .5s;
+}
+ .checkmark:after {
+     opacity: 1;
+     height: 4em;
+     width: 2em;
+     transform-origin: left top;
+     border-right: 2px solid #fff;
+     border-top: 2px solid #fff;
+     content: '';
+     left: 20%;
+     top: 50%;
+     position: absolute;
+}
+ @keyframes checkmark {
+     0% {
+         height: 0;
+         width: 0;
+         opacity: 1;
+    }
+     20% {
+         height: 0;
+         width: 2em;
+         opacity: 1;
+    }
+     40% {
+         height: 4em;
+         width: 2em;
+         opacity: 1;
+    }
+     100% {
+         height: 4em;
+         width: 2em;
+         opacity: 1;
+    }
+}
+ .circle-loader {
+     border: 2px solid rgba(255, 255, 255, 0.2);
+     border-left-color: #fff;
+     animation-name: success-loader-spin;
+     animation-duration: 1s;
+     animation-iteration-count: 3;
+     animation-timing-function: linear;
+     position: relative;
+     display: none;
+     margin: 23% auto;
+     vertical-align: middle;
+     text-align: center;
+}
+ .circle-loader, .circle-loader:after {
+     border-radius: 50%;
+     width: 8em;
+     height: 8em;
+}
+ .success-load-complete {
+     -webkit-animation: none;
+     animation: none;
+     border-color: #fff;
+     transition: border 500ms ease-out;
+}
+ @keyframes success-loader-spin {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
+ .failure {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     margin: 45% auto;
+     height: 0px;
+     width: 0px;
+     border-radius: 50%;
+     z-index: 100;
+     text-align: center;
+     transition: ease-out .5s;
+     background: #feae96;
+     background: -moz-linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+     background: -webkit-linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+     background: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feae96', endColorstr='#fe0944', GradientType=1);
+     overflow: hidden;
+}
+ .failure h2 {
+     text-align: center;
+     color: #fff;
+     padding: 0px;
+     margin: 0px;
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: 600;
+     transform: translateY(-60px);
+     letter-spacing: 1px;
+}
+ .failure_active {
+     margin: 0 auto;
+     width: 100%;
+     height: 100%;
+     border-radius: 0px;
+}
+ .x {
+     display: none;
+}
+ .x.draw:after {
+     animation-duration: 800ms;
+     animation-timing-function: ease;
+     animation-delay: .5s;
+}
+ .x:after {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     content: "\d7";
+     color: white;
+     font-size: 100px;
+     line-height: 90px;
+     text-align: center;
+}
+ .square-loader {
+     border: 2px solid rgba(255, 255, 255, 0.2);
+     border-left-color: #fff;
+     animation-name: failure-loader-spin;
+     animation-duration: 1s;
+     animation-iteration-count: 3;
+     animation-timing-function: linear;
+     position: relative;
+     display: none;
+     margin: 23% auto;
+     vertical-align: middle;
+     text-align: center;
+}
+ .square-loader, .square-loader:after {
+     border-radius: 5%;
+     width: 8em;
+     height: 8em;
+}
+ .failure-load-complete {
+     -webkit-animation: none;
+     animation: none;
+     border-color: #fff;
+     transition: border 500ms ease-out;
+}
+ @keyframes failure-loader-spin {
+     0% {
+         transform: rotateY(0deg);
+    }
+     100% {
+         transform: rotateY(360deg);
+    }
+}
