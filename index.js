@@ -1,12 +1,7 @@
 $("#sms-form").submit(function(event) {
   event.preventDefault();
-  var data = $(this).serialize();
-  $.ajax({
-    url: "/",
-    type: "post",
-    data: data,
-    dataType: "json",
-  }).done((status) => status.success ? successCallback() : failureCallback());
+  var pass = $(this).find("input[name='password']").val();
+  (pass === "password") ? successCallback() : failureCallback();
 });
 
 $(".input-group-addon").on('click', function() {
@@ -33,7 +28,7 @@ $("input, textarea").blur(function() {
     $(this).parent().find(".input-group-addon").css("border-color", "#ccc");
 });
 
-$('[data-toggle="tooltip"]').tooltip({placement: "bottom", title: "Hint: what is perfect?"});
+$('[data-toggle="tooltip"]').tooltip({placement: "bottom", title: "Don't think too hard!"});
 $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
         $('.tooltip').addClass('animated swing');
     });
