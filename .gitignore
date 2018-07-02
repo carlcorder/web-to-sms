@@ -1,2 +1,5 @@
 # installation dependencies
-# node_modules/
+node_modules/
+
+# private config
+config.json

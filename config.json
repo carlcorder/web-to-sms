@@ -1,8 +1,0 @@
-{
-	"username": "corder.carl@gmail.com",
-	"api_key": "3cf7081e3ee93ef48ef78697945504472a32e168",
-	"till_url": "https://platform.tillmobile.com",
-	"phone_number": "+14849280436",
-	"till_send": "/api/send?username=corder.carl@gmail.com&api_key=3cf7081e3ee93ef48ef78697945504472a32e168",
-	"secret": "496"
-}
